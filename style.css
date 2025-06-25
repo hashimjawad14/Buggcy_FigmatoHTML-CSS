@@ -2627,74 +2627,117 @@ header {
 
     /* Discount Background */
     #discountBG {
-        width: 305px;
+        width: 80vw;
         top: 212px;
-        left: 40px;
-        font-size: 13px;
+        left: 0;
+        font-size: 4vw;
+    }
+
+    #bannerLeft{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     /* Banner Title */
     #bannerTitle {
-        max-width: 300px;
-        font-size: 26px;
-        top: 250px;
-        left: 40px;
+        width: 70vw;
+        font-size: 9vw;
+        top: 230px;
+        left: 10vw;
     }
 
     /* Banner Animated Text */
     #bannerAnimatedText1 {
-        font-size: 26px;
         top: 315px;
-        left: 30px;
+        width: 75vw;
+        left: 7vw;
+        font-size: 9vw;
     }
 
     #bannerAnimatedText2 {
-        font-size: 26px;
         top: 315px;
-        left: 30px;
+        width: 75vw;
+        left: 7vw;
+        font-size: 9vw;
     }
 
     #bannerAnimatedText3 {
-        font-size: 26px;
         top: 315px;
-        left: 30px;
+        width: 75vw;
+        left: 7vw;
+        font-size: 9vw;
     }
 
 
     /* Promotional Text */
     #promotionalText {
-        top: 380px;
-        left: 40px;
-        max-width: 422px;
-        font-size: 12px;
+        top: 390px;
+        width: 90vw;
+        left: 10vw;
+        font-size: 4vw;
     }
 
     /* Banner Shop Now Button */
     #bannerShopNowBtn {
-        top: 450px;
-        left: 40px;
-        width: 154px;
+        top: 440px;
+        left: 10vw;
+        width: 40vw;
         height: 35px;
-        font-size: 16px;
+        font-size: 5vw;
     }
 
     #bannerImgSec {
-        max-width: 480px;
+        max-width: 80vw;
+        left: 8vw;
+        top: 330px;
+    }
+
+    #girlImg{
+        width: 100vw;
+        height: 60vh;
     }
 
     #clientReviewCard {
-        max-width: 400px;
+        max-width: 90vw;
+        left: 0;
+        top: 220px;
+    }
+
+       /* Card Client Image */
+    #cardClientImage {
+        top: 235px;
+        left: 10px;
+    }
+
+    /* Client Review Text Section */
+
+    #clientName {
+        font-size: 14px;
+        top: 220px;
+        left: 80px;
+    }
+
+    #clientReview {
+        font-size: 14px;
+        width: 255px;
+        top: 245px;
+        left: 80px;
     }
 
 
     /* ****Trending Products Section**** */
+
+    #trendingProductsSection{
+        margin-top: 400px;
+    }
 
     /* ****Trending Products Tiles Section**** */
 
     #trendingProductTilesSection {
         flex-wrap: wrap;
     }
-
 
     /* ****Deal of the Week Section**** */
 
@@ -2707,31 +2750,62 @@ header {
 
     #dealProducts {
         flex-wrap: wrap;
-        max-width: 480px;
-        width: 100vw;
+        max-width: 90vw;
+        width: vw;
     }
 
     /* Deal Product Card */
     .dealProductCard {
-        max-width: 430px;
         width: 90vw;
         margin-top: 15px;
+        left: 0;
+        margin-left: 0;
     }
 
     .dealProductImg {
-        max-width: 212px;
-        width: 90vw;
+        width: 43vw;
+    }
+
+      .productDetailsSec {
+        max-width: 43vw;
     }
 
     /* Product Title */
     .productTitle {
-        font-size: 17px;
+        font-size: 13px;
     }
 
     /* Product Price */
     .productPrice {
-        font-size: 17px;
+        font-size: 13px;
     }
+
+    /* Buy Now Button */
+.buyNowBtn {
+    background-color: #EDF4F6;
+    width: 120px;
+    height: 40px;
+    border-radius: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 241.81px;
+    left: 20px;
+}
+
+.btnCartImg {
+    width: 12px;
+    height: 12px;
+}
+
+.buyNowBtnText {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #184363;
+    padding-left: 10px;
+}
 
 
     /* ****Medical Products Section**** */
@@ -2781,7 +2855,7 @@ header {
     }
 
     #savingsBottomText {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 10px;
     }
 
@@ -2789,21 +2863,21 @@ header {
     /* Customer Review Section */
 
     #customerReviewSection {
-        max-width: 480px;
-        height: 870px;
+        max-width: 100vw;
+        height: 1270px;
         padding: 0;
         margin: 0;
     }
 
 
     #customerReviewHeading {
-        width: 430px;
+        width: 85vw;
         height: 139px;
         position: absolute;
         top: 16px;
         left: 35px;
-        font-size: 32px;
-        line-height: 32px;
+        font-size: 24px;
+        line-height: 24px;
     }
 
     #leftArrow {
@@ -2839,6 +2913,7 @@ header {
         padding: 10px;
         gap: 10px;
         left: 0;
+        margin-bottom: 15px;
         margin-right: 10px;
     }
 
@@ -2893,27 +2968,27 @@ header {
 
     /* Sign Up Section */
     #signUpSection {
-        max-width: 480px;
-        height: 247px;
+        max-width: 100vw;
+        height: 200px;
     }
 
     #courierBoyImg {
         left: 10px;
-        width: 200px;
+        width: 40vw;
     }
 
     #signUpText {
         width: 200px;
         height: 106px;
-        font-size: 26px;
+        font-size: 22px;
         top: 20px;
-        left: 240px;
+        left: 180px;
     }
 
     /* Sign Up button */
     #signUpBtn {
-        top: 155px;
-        left: 240px;
+        top: 130px;
+        left: 180px;
         width: 140px;
         height: 40px;
         font-size: 18px;
@@ -2929,11 +3004,13 @@ header {
     /* Footer Logo */
     #footerLogo {
         top: 15px;
-        left: 152px;
+        /* left: 92px; */
+        left: 20vw;
     }
 
     #footerHeadline {
-        left: 122px;
+        /* left: 62px; */
+        left: 14vw;
         top: 120px;
         text-align: center;
     }
@@ -2941,20 +3018,29 @@ header {
     /* Social icons */
     #socialIcons {
         top: 220px;
-        left: 175px;
+        /* left: 115px; */
+        left: 30vw;
     }
 
     /* Footer Menu */
     #footerMenu {
         top: 250px;
         left: 0px;
-        max-width: 100vw;
+        max-width: 95vw;
     }
 
 
     #lottie-animation2 {
         top: 630px;
-        left: 80px;
+        left: 10vw;
+    }
+
+    #rightsDeclaration{
+        font-size: 18px;
+        left: 0;
+        margin-left: 0;
+        width: 100vw;
+        text-align: center;
     }
 
 }
