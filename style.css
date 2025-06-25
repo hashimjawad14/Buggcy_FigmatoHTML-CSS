@@ -1,0 +1,2544 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "outfit";
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/* *****CSS for Header Section***** */
+
+header {
+    display: block;
+}
+
+/* Navigation bar */
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+
+/* Navigation bar menu options */
+.menuItem {
+    text-decoration: none;
+    margin: 0px 15px;
+    color: #0A2640;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Navigation bar Menu */
+.navBarMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav Icons */
+.navIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ShopNow Button */
+#navShopNowBtn {
+    background-color: #3CDA5F;
+    color: white;
+    width: 154px;
+    height: 45px;
+    font-size: 20px;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #999999, #FFFFFF) 1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#navShopNowBtn:hover {
+    background-color: #3CDA5F;
+    color: white;
+    width: 154px;
+    height: 45px;
+    font-size: 19.5px;
+    border: 2px solid;
+    border-image: linear-gradient(to left, #999999, #FFFFFF) 1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* *****CSS for SearchBar Section***** */
+
+.searchBarSection {
+    height: 64px;
+    background-color: #EDF4F6;
+    width: 100vw;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Categories Section */
+.categories {
+    max-width: 176px;
+    height: 45px;
+    background-color: #FFFFFF;
+    color: #184363;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+}
+
+/* Search Bar */
+.searchBar {
+    min-width: 1070px;
+    height: 47px;
+    margin-left: 3px;
+    background-color: #FFFFFF;
+    color: #184363;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 45px;
+    padding-left: 17px;
+}
+
+/* Search Icon */
+#searchIcon {
+    background-color: #3CDA5F;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    width: 56px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* *****Banner Section CSS***** */
+
+/* Discount Background */
+#discountBG {
+    background-color: rgba(60, 218, 95, 0.07);
+    width: 405px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    position: absolute;
+    top: 212px;
+    left: 65px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #0A2640;
+}
+
+/* Banner Title */
+#bannerTitle {
+    max-width: 513px;
+    font-size: 72px;
+    font-weight: 500;
+    color: #0A2640;
+    position: absolute;
+    top: 205px;
+    left: 65px;
+}
+
+/* Banner Animated Text */
+#bannerAnimatedText1 {
+    max-width: 531px;
+    font-size: 72px;
+    padding: 10px;
+    max-height: 111px;
+    font-weight: 500;
+    color: #FD273B;
+    position: absolute;
+    top: 375px;
+    left: 52px;
+    opacity: 0;
+    animation: bannerAnimation 6s infinite;
+    animation-delay: 0s;
+}
+
+#bannerAnimatedText2 {
+    max-width: 531px;
+    font-size: 72px;
+    padding: 10px;
+    max-height: 111px;
+    font-weight: 500;
+    color: #9747FF;
+    position: absolute;
+    top: 375px;
+    left: 52px;
+    opacity: 0;
+    animation: bannerAnimation 6s infinite;
+    animation-delay: 2s;
+}
+
+#bannerAnimatedText3 {
+    max-width: 531px;
+    font-size: 72px;
+    padding: 10px;
+    max-height: 111px;
+    font-weight: 500;
+    color: #2AD427;
+    position: absolute;
+    top: 375px;
+    left: 52px;
+    opacity: 0;
+    animation: bannerAnimation 6s infinite;
+    animation-delay: 4s;
+}
+
+/* Banner Text Animation */
+@keyframes bannerAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    90% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+}
+
+/* Promotional Text */
+#promotionalText {
+    position: absolute;
+    top: 527px;
+    left: 65px;
+    max-width: 422px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000000;
+}
+
+/* Banner Shop Now Button */
+#bannerShopNowBtn {
+    position: absolute;
+    top: 598px;
+    left: 65px;
+    width: 154px;
+    height: 45px;
+    background-color: #3CDA5F;
+    border-radius: 10px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: #FFFFFF 0 solid;
+}
+
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bannerImgSec {
+    background-image: url(assets/Ellipse\ 7.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+}
+
+/* Client Review Card */
+#clientReviewCard {
+    background-color: #F8F8F8;
+    position: absolute;
+    top: 580px;
+    left: 670px;
+    width: 439px;
+    height: 95px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: #000000 1;
+    box-sizing: border-box;
+}
+
+/* Card Client Image */
+#cardClientImage {
+    position: absolute;
+    top: 595px;
+    left: 690px;
+}
+
+/* Client Review Text Section */
+
+#clientName {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    top: 582px;
+    left: 770px;
+}
+
+#clientReview {
+    color: #777676;
+    font-size: 15px;
+    width: 279px;
+    font-weight: 500;
+    position: absolute;
+    top: 605px;
+    left: 770px;
+}
+
+
+/* ****Trending Products Section**** */
+
+
+#trendingProductsHeadingSection {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#trendingProductsHeading {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 3px 15px;
+    max-width: 165px;
+    max-height: 25px;
+    color: #0A2640;
+    background-image: url(assets/Ellipse\ 9.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/* ****Trending Products Tiles Section**** */
+
+
+#trendingProductTilesSection {
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Product Tile */
+.productTile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Product Tile Pic */
+.productTilePic {
+    width: 195px;
+    height: 200px;
+    border-radius: 15px;
+    border: 0.8px solid #3CDA5F;
+}
+
+
+
+/* ****Deal of the Week Section**** */
+
+#dealOfWeekSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#dealofWeekHeading {
+    color: #184363;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#dealTimeSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Deal Card */
+.dealTimeCard {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #3CDA5F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeNumber {
+    color: #FFFFFF;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.timeText {
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* Deal Products Section */
+#dealProductsSection {
+    display: flex;
+    margin-top: 30px;
+    padding-left: 10px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#dealProducts {
+    /* width: 1239.5px; */
+    width: 100vw;
+    min-height: 304.8800048828125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Deal Product Card */
+.dealProductCard {
+    min-width: 607.75px;
+    width: 46vw;
+    min-height: 304.8800048828125px;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.dealProductImg {
+    width: 302.8800048828125px; 
+    max-width: 23vw;
+    min-height: 302.8800048828125px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.productDetailsSec {
+    max-width: 302.88px;
+    width: 23vw;
+    min-height: 302.88px;
+}
+
+
+/* Product Details Section */
+.productDetailsSec {
+    position: relative;
+}
+
+/* Product Title */
+.productTitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 254.88px;
+    color: #184363;
+    position: absolute;
+    top: 13.81px;
+    left: 30px;
+}
+
+/* Product Price */
+.productPrice {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #184363;
+    position: absolute;
+    top: 51.81px;
+    left: 30px;
+}
+
+/* Product Features Section */
+.productFeaturesSec {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 40px;
+    position: relative;
+    top: 107px;
+    padding-left: 10px;
+}
+
+/* Product Features Text */
+.productFeatureText {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 124px;
+    color: #184363;
+}
+
+/* Buy Now Button */
+.buyNowBtn {
+    background-color: #EDF4F6;
+    width: 180px;
+    height: 40px;
+    border-radius: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 241.81px;
+    left: 27px;
+}
+
+.btnCartImg {
+    width: 18px;
+    height: 18px;
+}
+
+.buyNowBtnText {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #184363;
+    padding-left: 10px;
+}
+
+
+/* ****Medical Products Section**** */
+#medicalProductsSection {
+    margin-top: 40px;
+}
+
+/* Medical Products Heading */
+#medicalProductsHeading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #184363;
+    text-align: center;
+}
+
+#medicalProductsSection {
+    margin-left: 10px;
+}
+
+#medicalProducts {
+    /* max-width: 1240px; */
+    width: 100vw;
+    height: 272px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Medical Product Card */
+#medicalProductCard1 {
+    width: 608px;
+    max-width: 44vw;
+    height: 270px;
+    border-radius: 10px;
+    background-image: url(assets/mask.png);
+    background-size: cover;
+    position: relative;
+}
+
+#medicalProductCard2 {
+    width: 608px;
+    max-width: 44vw;
+    height: 270px;
+    border-radius: 10px;
+    background-image: url(assets/med.png);
+    background-size: cover;
+    position: relative;
+}
+
+.priceRange {
+    width: 83.62999725341797px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #F2971F;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    position: absolute;
+    top: 48px;
+    left: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medicalProductName {
+    max-width: 249px;
+    max-height: 103px;
+    color: #184363;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    position: absolute;
+    top: 61px;
+    left: 56px;
+}
+
+.medShopNowBtn {
+    width: 109.22000122070312px;
+    height: 40px;
+    border-radius: 72px;
+    background-color: #184363;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    position: absolute;
+    top: 178px;
+    left: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ****Savings Section**** */
+#savingsSection {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+#lottie-animation1 {
+    width: 500px;
+    height: 500px;
+    margin-left: 74px;
+    background-image: url(assets/Polygon\ 1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+#savingsText {
+    max-width: 513px;
+    max-height: 273px;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 100%;
+    color: #000000;
+}
+
+#savingsBottomText {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #184363;
+}
+
+
+/* Customer Review Section */
+
+#customerReviewSection {
+    position: relative;
+    /* width: 1440px; */
+    width: 100vw;
+    height: 782px;
+    background-color: #B4FEC4;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#customerReviewSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/reviewBg.png);
+    background-repeat: repeat;
+    background-size: auto;
+    opacity: 0.03;
+    z-index: -1;
+}
+
+#customerReviewHeading {
+    width: 736.4571533203125px;
+    height: 139px;
+    position: absolute;
+    top: 46px;
+    left: 154.29px;
+    color: #184363;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
+}
+
+#leftArrow {
+    width: 74.05714416503933px;
+    height: 72.00000000000028px;
+    position: absolute;
+    top: 150px;
+    left: 984.29px;
+}
+
+#rightArrow {
+    width: 74.05714416503933px;
+    height: 72.00000000000028px;
+    position: absolute;
+    top: 150px;
+    left: 1084.29px;
+}
+
+/* Customer Details 1 */
+
+#customerReviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 80vw;
+    top: 280px;
+    left: 34.29px;
+}
+
+#customerReview1 {
+    width: 280px;
+    height: 330px;
+    background-color: #FFFFFF;
+    z-index: 2;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 12px;
+    margin-right: 15px;
+    box-shadow: #0000001F 0.12;
+}
+
+#reviewText1 {
+    width: 270px;
+    height: 180px;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+/* Card Customer Image */
+#cardCustomerImage1 {
+    width: 58px;
+    height: 58px;
+    border-radius: 100%;
+    position: absolute;
+    top: 280px;
+    left: 40px;
+}
+
+#customerName1 {
+    color: #000000;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 500;
+    line-height: 32px;
+    position: absolute;
+    width: 196px;
+    height: 24px;
+    top: 263px;
+    left: 114px;
+}
+
+#customerPosition1 {
+    font-family: "Open Sans";
+    color: #184363;
+    font-size: 14px;
+    width: 196px;
+    height: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    position: absolute;
+    top: 291px;
+    left: 114px;
+}
+
+#customerDetails1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Customer Details 2 */
+
+#customerReview2 {
+    width: 300px;
+    height: 364px;
+    background-color: #FFFFFF;
+    z-index: 2;
+    padding: 30px;
+    gap: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    margin-right: 15px;
+    box-shadow: #0000001F 0.12;
+}
+
+#reviewText2 {
+    width: 270px;
+    height: 216px;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+/* Card Customer Image */
+#cardCustomerImage2 {
+    width: 58px;
+    height: 58px;
+    border-radius: 100%;
+    position: absolute;
+    top: 316px;
+    left: 40px;
+}
+
+#customerName2 {
+    color: #000000;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 500;
+    line-height: 32px;
+    position: absolute;
+    width: 196px;
+    height: 24px;
+    top: 298px;
+    left: 114px;
+}
+
+#customerPosition2 {
+    font-family: "Open Sans";
+    color: #184363;
+    font-size: 14px;
+    width: 196px;
+    height: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    position: absolute;
+    top: 325px;
+    left: 114px;
+}
+
+#customerDetails2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Customer Details 3 */
+
+#customerReview3 {
+    width: 280px;
+    height: 330px;
+    background-color: #FFFFFF;
+    z-index: 2;
+    padding: 30px;
+    gap: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    box-shadow: #0000001F 0.12;
+}
+
+#reviewText3 {
+    width: 270px;
+    height: 180px;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+/* Card Customer Image */
+#cardCustomerImage3 {
+    width: 58px;
+    height: 58px;
+    border-radius: 100%;
+    position: absolute;
+    top: 280px;
+    left: 40px;
+}
+
+#customerName3 {
+    color: #000000;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: 500;
+    line-height: 32px;
+    position: absolute;
+    width: 196px;
+    height: 24px;
+    top: 263px;
+    left: 114px;
+}
+
+#customerPosition3 {
+    font-family: "Open Sans";
+    color: #184363;
+    font-size: 14px;
+    width: 196px;
+    height: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    position: absolute;
+    top: 291px;
+    left: 114px;
+}
+
+#customerDetails3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Sign Up Section */
+#signUpSection {
+    /* width: 1440px; */
+    width: 100vw;
+    height: 407px;
+    background: linear-gradient(to right, rgba(60, 218, 95, 0.3), #F3F8FF, #FFFFFF, #F4F9FF, rgba(60, 218, 95, 0.3));
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#courierBoyImg {
+    position: absolute;
+    /* left: 90px; */
+    left: 15vw;
+}
+
+#signUpText {
+    width: 539px;
+    height: 106px;
+    font-size: 42px;
+    font-weight: 600;
+    color: #0A2640;
+    line-height: 100%;
+    position: absolute;
+    top: 50px;
+    /* left: 510px; */
+    left: 48vw;
+}
+
+/* Sign Up button */
+#signUpBtn {
+    width: 250px;
+    height: 62px;
+    border-radius: 8px;
+    background-color: #3CDA5F;
+    /* padding: 18px 22px; */
+    color: #FBFBFB;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -2%;
+    font-weight: 500;
+    position: absolute;
+    top: 230px;
+    /* left: 510px; */
+    left: 48vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Footer Section */
+#footerSection {
+    /* width: 1440px; */
+    width: 100vw;
+    height: 466px;
+    background: #0A2640;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Footer Logo */
+#footerLogo {
+    /* width: 200px; */
+    width: 7vw;
+    height: 64px;
+    font-size: 51px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 100%;
+    position: absolute;
+    top: 55px;
+    /* left: 150px; */
+    left: 10.29vw;
+}
+
+#footerHeadline {
+    width: 279px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 100%;
+    position: absolute;
+    top: 159px;
+    /* left: 150px; */
+    left: 10.29vw;
+}
+
+/* Social icons */
+#socialIcons {
+    width: 150px;
+    height: 24px;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    /* left: 148px; */
+    left: 10.27vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Footer Menu */
+#footerMenu {
+    /* width: 400px; */
+    width: 27.7vw;
+    max-height: 100px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25px;
+    /* left: 500px; */
+    left: 34.7vw;
+}
+
+/* Footer Menu Options */
+.footerMenuOptions {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 0;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#lottie-animation2 {
+    width: 308px;
+    height: 234px;
+    position: absolute;
+    top: 112px;
+    /* left: 900px; */
+    left: 62.5vw;
+}
+
+#rightsDeclaration {
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 100%;
+    text-align: center;
+    position: absolute;
+    /* top: 400px; */
+    top: 43vh;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: 1200px) {
+    .menuIcon {
+        display: none;
+    }
+}
+
+/* Styles for screens 1200px and below */
+@media (max-width: 1200px) {
+    .menuIcon {
+        display: none;
+    }
+}
+
+
+/* Styles for screens 992px and below */
+@media (max-width: 992px) {
+    .menuIcon {
+        display: none;
+    }
+
+    .searchBar {
+        min-width: 600px;
+    }
+
+    .categories {
+        max-width: 140px;
+        font-size: 14px;
+    }
+
+    .searchBarSection {
+        width: 100vw;
+    }
+
+    /* *****Banner Section CSS***** */
+
+    /* Discount Background */
+    #discountBG {
+        background-color: rgba(60, 218, 95, 0.07);
+        width: 405px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 30px;
+        position: absolute;
+        top: 212px;
+        left: 65px;
+        font-size: 13px;
+        font-weight: 400;
+        color: #0A2640;
+    }
+
+    /* Banner Title */
+    #bannerTitle {
+        max-width: 400px;
+        font-size: 40px;
+        font-weight: 500;
+        color: #0A2640;
+        position: absolute;
+        top: 205px;
+        left: 65px;
+        z-index: 0;
+    }
+
+    /* Banner Animated Text */
+    #bannerAnimatedText1 {
+        max-width: 420px;
+        font-size: 40px;
+        padding: 10px;
+        max-height: 111px;
+        font-weight: 500;
+        color: #FD273B;
+        position: absolute;
+        top: 320px;
+        left: 52px;
+        opacity: 0;
+        animation: bannerAnimation 6s infinite;
+        animation-delay: 0s;
+        z-index: 0;
+    }
+
+    #bannerAnimatedText2 {
+        color: #9747FF;
+        max-width: 420px;
+        font-size: 40px;
+        padding: 10px;
+        max-height: 111px;
+        font-weight: 500;
+        position: absolute;
+        top: 320px;
+        left: 52px;
+        opacity: 0;
+        animation: bannerAnimation 6s infinite;
+        animation-delay: 2s;
+        z-index: 0;
+    }
+
+    #bannerAnimatedText3 {
+        color: #2AD427;
+        max-width: 420px;
+        font-size: 40px;
+        padding: 10px;
+        max-height: 111px;
+        font-weight: 500;
+        position: absolute;
+        top: 320px;
+        left: 52px;
+        opacity: 0;
+        animation: bannerAnimation 6s infinite;
+        animation-delay: 4s;
+        z-index: 0;
+    }
+
+
+    /* Promotional Text */
+    #promotionalText {
+        position: absolute;
+        top: 410px;
+        left: 65px;
+        max-width: 422px;
+        font-size: 12px;
+        font-weight: 300;
+        color: #000000;
+        z-index: 0;
+    }
+
+    /* Banner Shop Now Button */
+    #bannerShopNowBtn {
+        position: absolute;
+        top: 450px;
+        left: 65px;
+        width: 154px;
+        height: 35px;
+        background-color: #3CDA5F;
+        border-radius: 10px;
+        padding: 10px;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 600;
+        border: #FFFFFF 0 solid;
+        z-index: 0;
+    }
+
+
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #bannerImgSec {
+        background-image: url(assets/Ellipse\ 7.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 200px;
+        max-width: 500px;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    /* Client Review Card */
+    #clientReviewCard {
+        background-color: #F8F8F8;
+        position: absolute;
+        top: 430px;
+        left: 30px;
+        width: 439px;
+        height: 95px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: #000000 1;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+    /* Card Client Image */
+    #cardClientImage {
+        position: absolute;
+        top: 445px;
+        left: 50px;
+        z-index: 2;
+    }
+
+    /* Client Review Text Section */
+
+    #clientName {
+        color: #000000;
+        font-size: 14px;
+        font-weight: 500;
+        position: absolute;
+        top: 432px;
+        left: 120px;
+        z-index: 2;
+    }
+
+    #clientReview {
+        color: #777676;
+        font-size: 14px;
+        width: 279px;
+        font-weight: 500;
+        position: absolute;
+        top: 455px;
+        left: 120px;
+        z-index: 2;
+    }
+
+
+    /* ****Trending Products Section**** */
+
+
+    #trendingProductsHeadingSection {
+        margin-top: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #trendingProductsHeading {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 3px 15px;
+        max-width: 165px;
+        max-height: 25px;
+        color: #0A2640;
+        background-image: url(assets/Ellipse\ 9.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    /* ****Trending Products Tiles Section**** */
+
+    #trendingProductTilesSection {
+        padding: 30px 60px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+/* ****Trending Products Section**** */
+
+    /* ****Trending Products Tiles Section**** */
+
+    #trendingProductTilesSection {
+        flex-wrap: wrap;
+    }
+
+
+    /* ****Deal of the Week Section**** */
+
+    #dealOfWeekSection {
+        flex-wrap: wrap;
+    }
+
+
+    /* Deal Products Section */
+
+    #dealProducts {
+        flex-wrap: wrap;
+    }
+
+
+    /* ****Medical Products Section**** */
+
+    #medicalProductsSection {
+        margin-left: 20px;
+    }
+
+    #medicalProducts {
+        width: 100%;
+        height: 272px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Medical Product Card */
+    #medicalProductCard1 {
+        max-width: 800px;
+        background-size: auto;
+    }
+
+    #medicalProductCard2 {
+        max-width: 800px;
+        margin-top: 10px;
+        background-size: auto;
+    }
+
+
+    /* ****Savings Section**** */
+    #savingsSection {
+        margin-top: 240px;
+        flex-wrap: wrap;
+    }
+
+
+    #savingsText {
+        font-size: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    #savingsBottomText {
+        font-size: 24px;
+        line-height: 10px;
+    }
+
+
+    /* Customer Review Section */
+
+    #customerReviewSection {
+        width: 768px;
+        height: 510px;
+        /* margin-top: 300px; */
+        padding: 0;
+    }
+
+
+    #customerReviewHeading {
+        width: 536px;
+        height: 139px;
+        position: absolute;
+        top: 16px;
+        left: 35px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    #leftArrow {
+        width: 54px;
+        height: 52px;
+        top: 70px;
+        left: 480px;
+    }
+
+    #rightArrow {
+        width: 54px;
+        height: 52px;
+        top: 70px;
+        left: 560px;
+    }
+
+    /* Customer Details 1 */
+
+    #customerReviews {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        top: 150px;
+        /* left: 34.29px; */
+    }
+
+    #customerReview1 {
+        width: 180px;
+        height: 250px;
+        padding: 15px;
+        gap: 15px;
+        left: 0;
+        margin-right: 10px;
+    }
+
+    #reviewText1 {
+        width: 180px;
+        height: 120px;
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    /* Card Customer Image */
+    #cardCustomerImage1 {
+        width: 58px;
+        height: 58px;
+        top: 210px;
+        left: 70px;
+    }
+
+    #customerName1 {
+        font-size: 14px;
+        top: 195px;
+        left: 135px;
+    }
+
+    #customerPosition1 {
+        font-size: 13px;
+        top: 220px;
+        left: 133px;
+    }
+
+
+    /* Customer Details 2 */
+
+    #customerReview2 {
+        width: 180px;
+        height: 280px;
+        padding: 15px;
+        gap: 15px;
+        left: 0;
+        margin-right: 10px;
+    }
+
+    #reviewText2 {
+        width: 180px;
+        height: 120px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    /* Card Customer Image */
+    #cardCustomerImage2 {
+        width: 58px;
+        height: 58px;
+        top: 225px;
+        left: 10px;
+    }
+
+    #customerName2 {
+        font-size: 14px;
+        top: 205px;
+        left: 85px;
+    }
+
+    #customerPosition2 {
+        font-size: 13px;
+        top: 240px;
+        width: 100px;
+        line-height: 17px;
+        left: 83px;
+    }
+
+    /* Customer Details 3 */
+
+    #customerReview3 {
+        width: 180px;
+        height: 250px;
+        padding: 15px;
+        gap: 15px;
+        left: 0;
+        margin-right: 10px;
+    }
+
+    #reviewText3 {
+        width: 180px;
+        height: 120px;
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    /* Card Customer Image */
+    #cardCustomerImage3 {
+        width: 58px;
+        height: 58px;
+        top: 205px;
+        left: 10px;
+    }
+
+    #customerName3 {
+        font-size: 14px;
+        top: 185px;
+        left: 85px;
+    }
+
+    #customerPosition3 {
+        font-size: 13px;
+        top: 220px;
+        width: 100px;
+        line-height: 17px;
+        left: 83px;
+    }
+
+
+    /* Sign Up Section */
+    #signUpSection {
+        width: 768px;
+        height: 407px;
+    }
+
+    #courierBoyImg {
+        position: absolute;
+        left: 30px;
+    }
+
+    #signUpText {
+        width: 339px;
+        height: 106px;
+        font-size: 32px;
+        top: 80px;
+        left: 400px;
+    }
+
+    /* Sign Up button */
+    #signUpBtn {
+        top: 230px;
+        left: 430px;
+    }
+
+    /* Footer Section */
+    #footerSection {
+        width: 768px;
+        height: 950px;
+        margin-top: 30px;
+    }
+
+    /* Footer Logo */
+    #footerLogo {
+        top: 55px;
+        left: 282px;
+    }
+
+    #footerHeadline {
+        left: 238px;
+        text-align: center;
+    }
+
+    /* Social icons */
+    #socialIcons {
+        top: 250px;
+        left: 310px;
+    }
+
+    /* Footer Menu */
+    #footerMenu {
+        top: 280px;
+        left: 190px;
+        width: 80vh;
+    }
+
+    #lottie-animation2 {
+        top: 630px;
+        left: 220px;
+    }
+
+    #rightsDeclaration {
+        top: 870px;
+    }
+
+
+
+}
+
+
+/* Styles for screens 768px and below */
+@media (max-width: 768px) {
+    .navBar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navBarMenu {
+        display: none;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    .navBarMenu.active {
+        display: flex;
+    }
+
+    .menuItem {
+        margin: 10px 0;
+        text-align: right;
+    }
+
+    .menuIcon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navIcons {
+        margin-right: 10px;
+    }
+
+    .searchBarSection {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .categories {
+        margin-bottom: 10px;
+    }
+
+    .searchBar {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .searchBarSection {
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+
+
+    /* *****Banner Section CSS***** */
+
+    /* Discount Background */
+    #discountBG {
+        width: 405px;
+        top: 212px;
+        left: 65px;
+        font-size: 13px;
+    }
+
+    /* Banner Title */
+    #bannerTitle {
+        max-width: 400px;
+        font-size: 40px;
+        top: 205px;
+        left: 65px;
+    }
+
+    /* Banner Animated Text */
+    #bannerAnimatedText1 {
+        font-size: 40px;
+        top: 320px;
+        left: 52px;
+    }
+
+    #bannerAnimatedText2 {
+        font-size: 40px;
+        top: 320px;
+        left: 52px;
+    }
+
+    #bannerAnimatedText3 {
+        font-size: 40px;
+        top: 320px;
+        left: 52px;
+    }
+
+
+    /* Promotional Text */
+    #promotionalText {
+        top: 410px;
+        left: 65px;
+        max-width: 422px;
+        font-size: 12px;
+    }
+
+    /* Banner Shop Now Button */
+    #bannerShopNowBtn {
+        top: 450px;
+        left: 65px;
+        width: 154px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+
+    .banner {
+        flex-wrap: wrap;
+    }
+
+    #bannerImgSec {
+        background-size: contain;
+        position: relative;
+        top: 200px;
+        max-width: 500px;
+    }
+
+    /* Client Review Card */
+    #clientReviewCard {
+        top: 430px;
+        left: 30px;
+        width: 439px;
+        height: 95px;
+    }
+
+    /* Card Client Image */
+    #cardClientImage {
+        top: 445px;
+        left: 50px;
+    }
+
+    /* Client Review Text Section */
+
+    #clientName {
+        font-size: 14px;
+        top: 432px;
+        left: 120px;
+    }
+
+    #clientReview {
+        font-size: 14px;
+        width: 279px;
+        top: 455px;
+        left: 120px;
+    }
+
+
+    /* ****Trending Products Section**** */
+
+    /* ****Trending Products Tiles Section**** */
+
+    #trendingProductTilesSection {
+        flex-wrap: wrap;
+    }
+
+
+    /* ****Deal of the Week Section**** */
+
+    #dealOfWeekSection {
+        flex-wrap: wrap;
+    }
+
+
+    /* Deal Products Section */
+
+    #dealProducts {
+        flex-wrap: wrap;
+    }
+
+
+    /* ****Medical Products Section**** */
+
+    #medicalProductsSection {
+        margin-left: 20px;
+    }
+
+    #medicalProducts {
+        width: 100%;
+        height: 272px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Medical Product Card */
+    #medicalProductCard1 {
+        max-width: 800px;
+        background-size: auto;
+    }
+
+    #medicalProductCard2 {
+        max-width: 800px;
+        margin-top: 10px;
+        background-size: auto;
+    }
+
+
+    /* ****Savings Section**** */
+    #savingsSection {
+        margin-top: 240px;
+        flex-wrap: wrap;
+    }
+
+
+    #savingsText {
+        font-size: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    #savingsBottomText {
+        font-size: 24px;
+        line-height: 10px;
+    }
+
+
+    /* Customer Review Section */
+
+    #customerReviewSection {
+        width: 768px;
+        height: 510px;
+        /* margin-top: 300px; */
+        padding: 0;
+    }
+
+
+    #customerReviewHeading {
+        width: 536px;
+        height: 139px;
+        position: absolute;
+        top: 16px;
+        left: 35px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    #leftArrow {
+        width: 54px;
+        height: 52px;
+        top: 70px;
+        left: 480px;
+    }
+
+    #rightArrow {
+        width: 54px;
+        height: 52px;
+        top: 70px;
+        left: 560px;
+    }
+
+    /* Customer Details 1 */
+
+    #customerReviews {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        top: 150px;
+        /* left: 34.29px; */
+    }
+
+    #customerReview1 {
+        width: 180px;
+        height: 250px;
+        padding: 15px;
+        gap: 15px;
+        left: 0;
+        margin-right: 10px;
+    }
+
+    #reviewText1 {
+        width: 180px;
+        height: 120px;
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    /* Card Customer Image */
+    #cardCustomerImage1 {
+        width: 58px;
+        height: 58px;
+        top: 210px;
+        left: 70px;
+    }
+
+    #customerName1 {
+        font-size: 14px;
+        top: 195px;
+        left: 135px;
+    }
+
+    #customerPosition1 {
+        font-size: 13px;
+        top: 220px;
+        left: 133px;
+    }
+
+
+    /* Customer Details 2 */
+
+    #customerReview2 {
+        width: 180px;
+        height: 280px;
+        padding: 15px;
+        gap: 15px;
+        left: 0;
+        margin-right: 10px;
+    }
+
+    #reviewText2 {
+        width: 180px;
+        height: 120px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    /* Card Customer Image */
+    #cardCustomerImage2 {
+        width: 58px;
+        height: 58px;
+        top: 225px;
+        left: 10px;
+    }
+
+    #customerName2 {
+        font-size: 14px;
+        top: 205px;
+        left: 85px;
+    }
+
+    #customerPosition2 {
+        font-size: 13px;
+        top: 240px;
+        width: 100px;
+        line-height: 17px;
+        left: 83px;
+    }
+
+    /* Customer Details 3 */
+
+    #customerReview3 {
+        width: 180px;
+        height: 250px;
+        padding: 15px;
+        gap: 15px;
+        left: 0;
+        margin-right: 10px;
+    }
+
+    #reviewText3 {
+        width: 180px;
+        height: 120px;
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    /* Card Customer Image */
+    #cardCustomerImage3 {
+        width: 58px;
+        height: 58px;
+        top: 205px;
+        left: 10px;
+    }
+
+    #customerName3 {
+        font-size: 14px;
+        top: 185px;
+        left: 85px;
+    }
+
+    #customerPosition3 {
+        font-size: 13px;
+        top: 220px;
+        width: 100px;
+        line-height: 17px;
+        left: 83px;
+    }
+
+
+    /* Sign Up Section */
+    #signUpSection {
+        width: 768px;
+        height: 407px;
+    }
+
+    #courierBoyImg {
+        position: absolute;
+        left: 30px;
+    }
+
+    #signUpText {
+        width: 339px;
+        height: 106px;
+        font-size: 32px;
+        top: 80px;
+        left: 400px;
+    }
+
+    /* Sign Up button */
+    #signUpBtn {
+        top: 230px;
+        left: 430px;
+    }
+
+    /* Footer Section */
+    #footerSection {
+        width: 768px;
+        height: 950px;
+        margin-top: 30px;
+    }
+
+    /* Footer Logo */
+    #footerLogo {
+        top: 55px;
+        left: 282px;
+    }
+
+    #footerHeadline {
+        left: 238px;
+        text-align: center;
+    }
+
+    /* Social icons */
+    #socialIcons {
+        top: 250px;
+        left: 310px;
+    }
+
+    /* Footer Menu */
+    #footerMenu {
+        top: 280px;
+        left: 190px;
+    }
+
+    #lottie-animation2 {
+        top: 630px;
+        left: 220px;
+    }
+
+    #rightsDeclaration {
+        top: 870px;
+    }
+
+
+}
+
+
+/* Styles for screens 576px and below */
+@media (max-width: 576px) {
+
+    /* Navigation bar */
+    .navBar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 60px;
+    }
+
+    .navLogo {
+        width: 25px;
+        height: 10px;
+    }
+
+
+    /* Navigation bar menu options */
+    .menuItem {
+        text-decoration: none;
+        margin: 0px 15px;
+        color: #0A2640;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* Navigation bar Menu */
+    .navBarMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Nav Icons */
+    .navIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ShopNow Button */
+    #navShopNowBtn {
+        background-color: #3CDA5F;
+        color: white;
+        width: 100px;
+        height: 25px;
+        font-size: 12.5px;
+        border: 2px solid;
+        border-image: linear-gradient(to right, #999999, #FFFFFF) 1;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    #navShopNowBtn:hover {
+        background-color: #3CDA5F;
+        color: white;
+        width: 100px;
+        height: 25px;
+        font-size: 12.5px;
+        border: 2px solid;
+        border-image: linear-gradient(to left, #999999, #FFFFFF) 1;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .categories {
+        max-width: 120px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .searchBar {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #searchIcon {
+        width: 50px;
+        height: 40px;
+    }
+
+    .searchBarSection {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* Styles for screens 480px and below */
+@media (max-width: 480px) {
+
+    .searchBar {
+        max-width: 450px;
+    }
+
+    /* *****Banner Section CSS***** */
+
+    /* Discount Background */
+    #discountBG {
+        width: 305px;
+        top: 212px;
+        left: 40px;
+        font-size: 13px;
+    }
+
+    /* Banner Title */
+    #bannerTitle {
+        max-width: 300px;
+        font-size: 40px;
+        top: 210px;
+        left: 40px;
+    }
+
+    /* Banner Animated Text */
+    #bannerAnimatedText1 {
+        font-size: 40px;
+        top: 320px;
+        left: 30px;
+    }
+
+    #bannerAnimatedText2 {
+        font-size: 40px;
+        top: 320px;
+        left: 30px;
+    }
+
+    #bannerAnimatedText3 {
+        font-size: 40px;
+        top: 320px;
+        left: 30px;
+    }
+
+
+    /* Promotional Text */
+    #promotionalText {
+        top: 410px;
+        left: 40px;
+        max-width: 422px;
+        font-size: 12px;
+    }
+
+    /* Banner Shop Now Button */
+    #bannerShopNowBtn {
+        top: 450px;
+        left: 40px;
+        width: 154px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    #bannerImgSec {
+        max-width: 480px;
+    }
+
+    #clientReviewCard {
+        max-width: 400px;
+    }
+
+
+    /* ****Trending Products Section**** */
+
+    /* ****Trending Products Tiles Section**** */
+
+    #trendingProductTilesSection {
+        flex-wrap: wrap;
+    }
+
+
+    /* ****Deal of the Week Section**** */
+
+    #dealOfWeekSection {
+        flex-wrap: wrap;
+    }
+
+
+    /* Deal Products Section */
+
+    #dealProducts {
+        flex-wrap: wrap;
+        max-width: 480px;
+    }
+
+    /* Deal Product Card */
+    .dealProductCard {
+        max-width: 430px;
+    }
+
+    .dealProductImg {
+        max-width: 212px;
+    }
+
+    /* Product Title */
+    .productTitle {
+        font-size: 17px;
+    }
+
+    /* Product Price */
+    .productPrice {
+        font-size: 17px;
+    }
+
+
+    /* ****Medical Products Section**** */
+
+    #medicalProductsSection {
+        margin-left: 20px;
+    }
+
+    #medicalProducts {
+        width: 100%;
+        height: 272px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Medical Product Card */
+    #medicalProductCard1 {
+        max-width: 430px;
+        background-size: auto;
+    }
+
+    #medicalProductCard2 {
+        max-width: 430px;
+        margin-top: 10px;
+        background-size: auto;
+    }
+
+
+    /* ****Savings Section**** */
+    #savingsSection {
+        margin-top: 240px;
+        flex-wrap: wrap;
+    }
+
+
+    #savingsText {
+        font-size: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    #savingsBottomText {
+        font-size: 24px;
+        line-height: 10px;
+    }
+
+
+    /* Customer Review Section */
+
+    #customerReviewSection {
+        max-width: 480px;
+        height: 870px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    #customerReviewHeading {
+        width: 430px;
+        height: 139px;
+        position: absolute;
+        top: 16px;
+        left: 35px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    #leftArrow {
+        width: 54px;
+        height: 52px;
+        top: 130px;
+        left: 80px;
+    }
+
+    #rightArrow {
+        width: 54px;
+        height: 52px;
+        top: 130px;
+        left: 160px;
+    }
+
+    /* Customer Details 1 */
+
+    #customerReviews {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        top: 200px;
+        /* left: 34.29px; */
+    }
+
+    #customerReview1 {
+        width: 130px;
+        height: 280px;
+        padding: 10px;
+        gap: 10px;
+        left: 0;
+        margin-right: 10px;
+    }
+
+    #reviewText1 {
+        width: 130px;
+        height: 120px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    /* Card Customer Image */
+    #cardCustomerImage1 {
+        width: 58px;
+        height: 58px;
+        top: 180px;
+        left: 90px;
+    }
+
+    #customerName1 {
+        font-size: 14px;
+        top: 225px;
+        left: 85px;
+    }
+
+    #customerPosition1 {
+        font-size: 13px;
+        top: 245px;
+        left: 70px;
+    }
+
+
+    /* Customer Details 2 */
+
+    #reviewText2 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+
+    /* Customer Details 3 */
+
+    #customerReview3 {
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    #reviewText3 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+
+    /* Sign Up Section */
+    #signUpSection {
+        max-width: 480px;
+        height: 247px;
+    }
+
+    #courierBoyImg {
+        left: 10px;
+        width: 200px;
+    }
+
+    #signUpText {
+        width: 200px;
+        height: 106px;
+        font-size: 26px;
+        top: 20px;
+        left: 240px;
+    }
+
+    /* Sign Up button */
+    #signUpBtn {
+        top: 155px;
+        left: 240px;
+        width: 140px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    /* Footer Section */
+    #footerSection {
+        max-width: 480px;
+        height: 950px;
+        margin-top: 30px;
+    }
+
+    /* Footer Logo */
+    #footerLogo {
+        top: 15px;
+        left: 152px;
+    }
+
+    #footerHeadline {
+        left: 122px;
+        top: 120px;
+        text-align: center;
+    }
+
+    /* Social icons */
+    #socialIcons {
+        top: 220px;
+        left: 175px;
+    }
+
+    /* Footer Menu */
+    #footerMenu {
+        top: 250px;
+        left: 40px;
+    }
+
+    #lottie-animation2 {
+        top: 630px;
+        left: 80px;
+    }
+
+}

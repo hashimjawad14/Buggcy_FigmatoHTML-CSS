@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickPik</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <div class="navBar">
+            <div class="menuIcon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <img src="assets/QuickPik.svg" alt="QuickPik Logo" id="navLogo">
+            <nav class="navBarMenu">
+                <a href="#" class="menuItem">Home</a>
+                <a href="#" class="menuItem">About Us</a>
+                <a href="#" class="menuItem">Products</a>
+                <a href="#" class="menuItem">Services</a>
+                <a href="#" class="menuItem">Contact us</a>
+            </nav>
+            <div class="navIcons">
+                <button id="navShopNowBtn" style="margin: 0px 8px;">ShopNow</button>
+                <img src="assets/iconamoon_profile-circle-fill.svg" alt="Profile Icon" style="margin: 0px 8px;">
+                <img src="assets/mdi_cart.svg" alt="Cart Icon" style="margin: 0px 8px;">
+            </div>
+            </nav>
+    </header>
+
+
+
+    <!-- Search Bar Section -->
+
+    <section style="display: flex;">
+        <div class="searchBarSection">
+            <div class="categories">
+                <img src="assets/CategoriesVector.svg" alt="Categories Vector">
+                <p style="font-size: 15px; color: #184363; margin-left: 7px;">All Categories</p>
+            </div>
+            <div class="searchBar">
+                <p style="font-size: 15px; color: #184363; margin-left: 7px;">What are you looking for?</p>
+                <div id="searchIcon">
+                    <img src="assets/icons8-search-30.png" style="width: 25px; height: 25px;" alt="Categories Vector">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Banner Section -->
+
+    <!-- Banner Left Side -->
+
+    <section class="banner">
+        <div style="max-width: 50%;">
+            <div id="discountBG">
+                <p>30% Off on groceries</p>
+            </div>
+            <div id="bannerTitle">
+                <p>Shop smarter, not harder.</p>
+            </div>
+            <div class="bannerAnimatedText">
+                <p id="bannerAnimatedText1">Get it ordered.</p>
+                <p id="bannerAnimatedText2">Get it shipped.</p>
+                <p id="bannerAnimatedText3">Get it delivered.</p>
+            </div>
+            <p id="promotionalText">Save time, skip the lines. We've got you covered.</p>
+            <button id="bannerShopNowBtn">ShopNow</button>
+        </div>
+
+        <!-- Banner Right Side -->
+
+        <div id="bannerImgSec">
+            <img src="assets/smiling-young-caucasian-girl-with-pixie-haircut-standing-profile-view-holding-shopping-bags-shoulder-isolated-olive-green-background-with-copy-space-removebg-preview 1.png"
+                alt="Banner Girl Image">
+
+            <!-- Client Review Card -->
+
+            <div id="clientReviewCardSection">
+                <div id="clientReviewCard"></div>
+                <img src="assets/Ellipse 8.png" alt="Card Client Image" id="cardClientImage">
+                <div id="clientReviewTextSection">
+                    <p id="clientName">Ashely Daniels</p>
+                    <p id="clientReview">"Saved me tons of time - never going back to grocery shopping!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Trending Products Section -->
+
+    <section id="trendingProductsSection">
+        <div id="trendingProductsHeadingSection">
+            <p id="trendingProductsHeading">Trending Products</p>
+        </div>
+
+        <div id="trendingProductTilesSection">
+            <div class="productTile">
+                <img src="assets/grocery_pic.png" alt="Grocery" class="productTilePic">
+                <p>Grocery</p>
+            </div>
+            <div class="productTile">
+                <img src="assets/shoes.png" alt="Shoes" class="productTilePic">
+                <p>Shoes</p>
+            </div>
+            <div class="productTile">
+                <img src="assets/phone.png" alt="Phone" class="productTilePic">
+                <p>Phones</p>
+            </div>
+            <div class="productTile">
+                <img src="assets/alexa.png" alt="Google Home" class="productTilePic">
+                <p>Google Home</p>
+            </div>
+            <div class="productTile">
+                <img src="assets/clock.png" alt="Alarm Clock" class="productTilePic">
+                <p>Alarm Clocks</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Deal of the week section -->
+
+    <section>
+        <div id="dealOfWeekSection">
+
+            <p id="dealofWeekHeading">Deal Of The Week</p>
+
+            <div id="dealTimeSection">
+                <div class="dealTimeCard">
+                    <p class="timeNumber">10<span class="timeText">Days</span></p>
+                </div>
+                <div class="dealTimeCard">
+                    <p class="timeNumber">19<span class="timeText">Hours</span></p>
+                </div>
+                <div class="dealTimeCard">
+                    <p class="timeNumber">59<span class="timeText">Minutes</span></p>
+                </div>
+                <div class="dealTimeCard">
+                    <p class="timeNumber">57<span class="timeText">Seconds</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dealProductsSection">
+        <div id="dealProducts">
+            <!-- First Product -->
+            <div class="dealProductCard">
+                <img src="assets/perfume.png" alt="Perfume" class="dealProductImg">
+                <div class="productDetailsSec">
+                    <p class="productTitle">Elegant Perfumes</p>
+                    <p class="productPrice">$16.00</p>
+                    <div class="productFeaturesSec">
+                        <img src="assets/tick.png" alt="Tick">
+                        <p class="productFeatureText">Long Lasting</p>
+                    </div>
+                    <div class="productFeaturesSec">
+                        <img src="assets/tick.png" alt="Tick" style="margin-left: 17px;">
+                        <p class="productFeatureText" style="margin-left: 9px; padding-left: 7px;">Affordable price</p>
+                    </div>
+                    <div class="productFeaturesSec">
+                        <img src="assets/tick.png" alt="Tick">
+                        <p class="productFeatureText">Best Perfume</p>
+                    </div>
+                    <div class="buyNowBtn">
+                        <img src="assets/cart_icon.png" alt="Cart" class="btnCartImg">
+                        <p class="buyNowBtnText">Buy Now</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Product -->
+            <div class="dealProductCard">
+                <img src="assets/shampoo.png" alt="Shampoo" class="dealProductImg">
+                <div class="productDetailsSec">
+                    <p class="productTitle">Strawberry Shampoo</p>
+                    <p class="productPrice">$18.88</p>
+                    <div class="productFeaturesSec">
+                        <img src="assets/tick.png" alt="Tick">
+                        <p class="productFeatureText">Allergy free</p>
+                    </div>
+                    <div class="productFeaturesSec">
+                        <img src="assets/tick.png" alt="Tick" style="margin-left: 17px;">
+                        <p class="productFeatureText" style="margin-left: 9px; padding-left: 7px;">Affordable price</p>
+                    </div>
+                    <div class="productFeaturesSec">
+                        <img src="assets/tick.png" alt="Tick">
+                        <p class="productFeatureText">Best Perfume</p>
+                    </div>
+                    <div class="buyNowBtn">
+                        <img src="assets/cart_icon.png" alt="Cart" class="btnCartImg">
+                        <p class="buyNowBtnText">Buy Now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Medical Products Section -->
+    <section>
+        <div id="medicalProductsSection">
+            <p id="medicalProductsHeading">Medical Products</p>
+
+            <div id="medicalProducts">
+                <!-- Product 1 -->
+                <div id="medicalProductCard1">
+                    <div class="priceRange">
+                        <p>From $0.99</p>
+                    </div>
+                    <p class="medicalProductName">Breathable Face Mask</p>
+                    <div class="medShopNowBtn">
+                        <p>Shop now</p>
+                        <img src="assets/right_arrow.png" alt="Right Arrow" style="padding: 10px 4px;">
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div id="medicalProductCard2">
+                    <div class="priceRange">
+                        <p>From $0.99</p>
+                    </div>
+                    <p class="medicalProductName">Medicine pack<br>
+                        Get it now 45% Off</p>
+                    <div class="medShopNowBtn">
+                        <p>Shop now</p>
+                        <img src="assets/right_arrow.png" alt="Right Arrow" style="padding: 10px 4px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Savings Section -->
+    <section>
+        <div id="savingsSection">
+            <div id="lottie-animation1"></div>
+            <p id="savingsText">Big city savings, delivered to your <span style="color: #FD273B;">doorstep.</span></p>
+        </div>
+        <p id="savingsBottomText">Our Actions speaks louder than WORDS</p>
+    </section>
+
+
+    <!-- Customer Review Section -->
+    <section>
+        <div id="customerReviewSection">
+            <p id="customerReviewHeading">Unlock the secrets of satisfied customers.</p>
+            <img src="assets/l_arrow_whiteBg.png" alt="Left Arrow" id="leftArrow">
+            <img src="assets/r_arrow_whiteBg.png" alt="Right Arrow" id="rightArrow">
+
+            <div id="customerReviews">
+                <!-- Customer Review1 -->
+                <div id="customerReview1">
+                    <div class="reviewCard">
+                        <p id="reviewText1">"Never going back to waiting in lines! Shop smarter, get it delivered with
+                            QuickPik. It's that simple."</p>
+                    </div>
+                    <div id="customerDetails1">
+                        <img src="assets/albus.png" alt="Customer Image" id="cardCustomerImage1">
+                        <div id="customerReviewTextSection">
+                            <p id="customerName1">Albus stella</p>
+                            <p id="customerPosition1">Manager @ Howarts</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Customer Review2 -->
+                <div id="customerReview2">
+                    <div class="reviewCard">
+                        <p id="reviewText2">"Wide selection, even in my small town! Found everything I needed for my
+                            birthday party with just a few clicks. Thanks, QuickPik!"</p>
+                    </div>
+                    <div id="customerDetails2">
+                        <img src="assets/snape.png" alt="Customer Image" id="cardCustomerImage2">
+                        <div id="customerReviewTextSection">
+                            <p id="customerName2">Severus Snape</p>
+                            <p id="customerPosition2">Manager @ Slytherin</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Customer Review3 -->
+                <div id="customerReview3">
+                    <div class="reviewCard">
+                        <p id="reviewText3">"Lifesaver for busy families! Fresh groceries delivered in a flash -
+                            dinner's on the table, thanks QuickPik!”</p>
+                    </div>
+                    <div id="customerDetails3">
+                        <img src="assets/harry.png" alt="Customer Image" id="cardCustomerImage3">
+                        <div id="customerReviewTextSection">
+                            <p id="customerName3">Harry brige</p>
+                            <p id="customerPosition3">Team Leader @ Gryffindor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sign Up Section -->
+    <section>
+        <div id="signUpSection">
+            <img src="assets/front-view-male-courier-green-uniform-cape-holding-coffee-cups-with-notepad-smiling-pink-background-service-uniform-delivery-job-removebg-preview 1.png"
+                alt="Courier Boy" id="courierBoyImg">
+            <p id="signUpText">SignUp For Exclusive Offers And Discounts</p>
+            <div id="signUpBtn">
+                <p>Sign Up</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div id="footerSection">
+            <p id="footerLogo">Quick<span style="color: #3CDA5F;">Pik</span></p>
+            <p id="footerHeadline">Shop smarter, not harder. Get it delivered.</p>
+            <div id="socialIcons">
+                <img src="assets/ri_instagram-fill.svg" alt="Instagram Logo">
+                <img src="assets/flowbite_x-solid.svg" alt="X Logo">
+                <img src="assets/ic_outline-facebook.svg" alt="Facebook Logo">
+                <img src="assets/mingcute_youtube-fill.svg" alt="YouTube Logo">
+            </div>
+
+            <div id="footerMenu">
+                <p class="footerMenuOptions">Quick Links</p>
+                <p class="footerMenuOptions">Locations</p>
+                <p class="footerMenuOptions">Home</p>
+                <p class="footerMenuOptions">Mumbai</p>
+                <p class="footerMenuOptions">AboutUs</p>
+                <p class="footerMenuOptions">Pune</p>
+                <p class="footerMenuOptions">Services</p>
+                <p class="footerMenuOptions">Nagpur</p>
+                <p class="footerMenuOptions">Products</p>
+                <p class="footerMenuOptions">Banglore</p>
+                <p class="footerMenuOptions">Contact Us</p>
+                <p class="footerMenuOptions">Goa</p>
+            </div>
+
+            <div id="lottie-animation2"></div>
+
+            <p id="rightsDeclaration">@All Rights Reserved QuickPik</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+
+    function toggleMenu() {
+        const menu = document.querySelector('.navBarMenu');
+        menu.classList.toggle('active');
+    }
+
+    // Load the animation1
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-animation1'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'assets/lottie.json'
+    });
+
+    // Load the animation2
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-animation2'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'assets/lottie2.json'
+    });
+</script>
