@@ -2733,12 +2733,14 @@ header {
     /* ****Trending Products Section**** */
 
     #trendingProductsSection{
+        max-width: 100vw;
         margin-top: 400px;
     }
 
     /* ****Trending Products Tiles Section**** */
 
     #trendingProductTilesSection {
+        max-width: 100vw;
         flex-wrap: wrap;
     }
 
@@ -2746,6 +2748,7 @@ header {
 
     #dealOfWeekSection {
         flex-wrap: wrap;
+        max-width: 100vw;
     }
 
 
