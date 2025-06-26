@@ -3048,7 +3048,7 @@ header {
 
     /* Footer Section */
     #footerSection {
-        max-width: 480px;
+        max-width: 100vw;
         height: 950px;
         margin-top: 30px;
     }
