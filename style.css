@@ -2619,6 +2619,9 @@ header {
 /* Styles for screens 480px and below */
 @media (max-width: 480px) {
 
+    .body{
+        max-width: 100vw;
+    }
     .searchBar {
         max-width: 450px;
     }
