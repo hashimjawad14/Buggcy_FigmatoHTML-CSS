@@ -83,11 +83,18 @@ header {
     height: 64px;
     background-color: #EDF4F6;
     width: 100vw;
+    max-width: 1440px;
     display: flex;
     padding: 0 20px;
     align-items: center;
     justify-content: center;
 }
+
+    #searchMenu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 /* Categories Section */
 .categories {
