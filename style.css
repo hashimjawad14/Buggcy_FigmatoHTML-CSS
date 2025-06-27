@@ -2712,6 +2712,10 @@ header {
         justify-content: center;
     }
 
+    .menuIcon{
+        margin-right: 6px;
+    }
+
     /* Navigation bar */
     .navBar {
         display: flex;
