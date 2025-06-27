@@ -2714,7 +2714,34 @@ header {
 
     .menuIcon{
         margin-right: 6px;
+        display: block;
+        cursor: pointer;
     }
+
+     .navBar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+        /* Navigation bar Menu */
+
+     .navBarMenu {
+        display: none;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 10;
+    }
+/* 
+    .navBarMenu.active {
+        display: flex;
+    } */
+
 
     /* Navigation bar */
     .navBar {
@@ -2739,12 +2766,6 @@ header {
         font-weight: 400;
     }
 
-    /* Navigation bar Menu */
-    .navBarMenu {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
 
     /* Nav Icons */
     .navIcons {
