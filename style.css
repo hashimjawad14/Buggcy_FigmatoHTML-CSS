@@ -1187,13 +1187,24 @@ header {
 
 /* Media Queries */
 
-@media (min-width: 2550px) {
+@media (min-width: 2561px) {
     #bannerLeft {
-        left: 1900px;
+        left: 37vw;
     }
 
     #bannerImgSec {
-        left: 2100px;
+        left: 40vw;
+    }
+
+}
+
+@media (min-width: 1980px) and (max-width: 2560px) {
+    #bannerLeft {
+        left: 25vw;
+    }
+
+    #bannerImgSec {
+        left: 33vw;
     }
 
 }
@@ -1208,15 +1219,13 @@ header {
         display: none;
     }
 
-    /* 
-    #bannerLeft {
-        left: 37vw;
+   /* #bannerLeft {
+        left: 15vw;
     }
 
     #bannerImgSec {
-        left: 42vw;
+        left: 27vw;
     } */
-
 
 
     #customerReviewHeading {
