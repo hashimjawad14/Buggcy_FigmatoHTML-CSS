@@ -2722,6 +2722,9 @@ header {
         padding: 7px 20px;
     }
 
+    #navLogo{
+        width: 70px;
+    }
 
     /* Navigation bar menu options */
     .menuItem {
@@ -2742,7 +2745,7 @@ header {
     /* Nav Icons */
     .navIcons {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: start;
         align-items: center;
     }
 
@@ -2750,7 +2753,7 @@ header {
     #navShopNowBtn {
         background-color: #3CDA5F;
         color: white;
-        width: 90px;
+        width: 80px;
         height: 30px;
         font-size: 16.5;
         border: 2px solid;
@@ -2762,7 +2765,7 @@ header {
     #navShopNowBtn:hover {
         background-color: #3CDA5F;
         color: white;
-        width: 90px;
+        width: 80px;
         height: 30px;
         font-size: 16.5px;
         border: 2px solid;
