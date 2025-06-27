@@ -3511,6 +3511,10 @@ header {
     #savingsSection {
         margin-top: 140px;
     }
+    
+    #lottie-animation1 {
+        margin-left: 8px;
+    }
 
     #savingsText {
         font-size: 40px;
