@@ -1180,6 +1180,17 @@ header {
 
 /* Media Queries */
 
+@media (min-width: 2550px) {
+    #bannerLeft {
+        left: 1900px;
+    }
+
+    #bannerImgSec {
+        left: 2100px;
+    }
+
+}
+
 @media (min-width: 1320px) {
     .navBar {
         padding-left: 20vw;
@@ -1232,7 +1243,8 @@ header {
         justify-content: center;
         position: relative;
         width: 100vw;
-        top: 40vh;
+        max-width: 1440px;
+        top: 300px;
         left: 0;
     }
 
@@ -2157,6 +2169,10 @@ header {
 
     /* ****Trending Products Tiles Section**** */
 
+    #trendingProductsHeadingSection {
+        margin-top: 260px;
+    }
+
     #trendingProductTilesSection {
         flex-wrap: wrap;
     }
@@ -2712,20 +2728,20 @@ header {
         justify-content: center;
     }
 
-    .menuIcon{
+    .menuIcon {
         margin-right: 6px;
         display: block;
         cursor: pointer;
     }
 
-     .navBar {
+    .navBar {
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-        /* Navigation bar Menu */
+    /* Navigation bar Menu */
 
-     .navBarMenu {
+    .navBarMenu {
         display: none;
         flex-direction: column;
         background-color: #f9f9f9;
@@ -2737,7 +2753,8 @@ header {
         padding: 10px;
         z-index: 10;
     }
-/* 
+
+    /* 
     .navBarMenu.active {
         display: flex;
     } */
@@ -2753,7 +2770,7 @@ header {
         padding: 7px 20px;
     }
 
-    #navLogo{
+    #navLogo {
         width: 70px;
     }
 
